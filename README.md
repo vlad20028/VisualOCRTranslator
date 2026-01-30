@@ -93,7 +93,7 @@ Tesseract OCR: Motor de reconocimiento de texto
 
 # OCR: Cualquier idioma soportado por Tesseract (configurable)
 
-Traducción: Todos los idiomas de Google Translate
+Traducción: Todos los idiomas de deepl
 Interfaz: Español (personalizable)
 
 # Limitaciones por diseño minimalista y Consideraciones Técnicas

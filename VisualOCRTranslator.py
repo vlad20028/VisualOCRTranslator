@@ -87,7 +87,7 @@ class ModernTranslatorApp:
         center_container.pack(side=tk.LEFT, expand=True)
         
         # Herramientas de texto (centradas)
-        self.font_size_var = tk.StringVar(value="12")
+        self.font_size_var = tk.StringVar(value="90")
         ttk.Label(center_container, text="Tamaño:").pack(side=tk.LEFT)
         
         # Frame para spinbox y botones
@@ -463,4 +463,5 @@ if __name__ == "__main__":
     app = ModernTranslatorApp(root)
 
     root.mainloop()
+
 

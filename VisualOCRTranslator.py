@@ -332,17 +332,22 @@ class ModernTranslatorApp:
         return text.strip()
 
     def translate_with_deepl_web(self, text_jp):
-        """Traduce usando DeepL Web (Simulación de navegador)"""
         if not text_jp or len(text_jp.strip()) == 0:
             return ""
         
+        # 1. PEQUEÑA PAUSA AUTOMÁTICA (Evita el baneo rápido)
+        import time
+        time.sleep(1.5) 
+
         try:
-            # Headers para simular navegador
+            # 2. HEADERS MÁS REALISTAS
             headers = {
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+                'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36',
+                'Accept': '*/*',
+                'Cache-Control': 'no-cache',
                 'Content-Type': 'application/json',
-                'Origin': 'https://www.deepl.com',
                 'Referer': 'https://www.deepl.com/translator',
+                'Connection': 'keep-alive',
             }
             
             # Timestamp mágico para evitar errores 429/403 de DeepL
@@ -456,4 +461,5 @@ class ModernTranslatorApp:
 if __name__ == "__main__":
     root = tk.Tk()
     app = ModernTranslatorApp(root)
+
     root.mainloop()

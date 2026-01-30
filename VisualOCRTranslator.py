@@ -77,7 +77,7 @@ class ModernTranslatorApp:
     def setup_ui(self):
         # --- TOPBAR (Estilo Google Docs) ---
         top_bar = ttk.Frame(self.root)
-        top_bar.pack(side=tk.TOP, fill=tk.X, padx=10, pady=5)
+        top_bar.pack(side=tk.TOP, fill=tk.X, padx=10, pady=15)
 
         ttk.Button(top_bar, text="📂 Abrir", command=self.load_pdf).pack(side=tk.LEFT, padx=2)
         ttk.Separator(top_bar, orient=tk.VERTICAL).pack(side=tk.LEFT, fill=tk.Y, padx=10)
@@ -87,7 +87,7 @@ class ModernTranslatorApp:
         center_container.pack(side=tk.LEFT, expand=True)
         
         # Herramientas de texto (centradas)
-        self.font_size_var = tk.StringVar(value="20")
+        self.font_size_var = tk.StringVar(value="18")
         ttk.Label(center_container, text="Tamaño:").pack(side=tk.LEFT)
         
         # Frame para spinbox y botones
@@ -463,6 +463,7 @@ if __name__ == "__main__":
     app = ModernTranslatorApp(root)
 
     root.mainloop()
+
 
 
 

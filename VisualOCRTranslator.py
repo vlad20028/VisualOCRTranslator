@@ -287,7 +287,7 @@ class ModernTranslatorApp:
             self.font_size_var.set(str(new_size))
             self.update_text_style()
         except ValueError:
-            self.font_size_var.set("12")
+            self.font_size_var.set("20")
 
     def update_text_style_from_enter(self, event=None):
         self.update_text_style()
@@ -335,7 +335,7 @@ class ModernTranslatorApp:
         if not text_jp or len(text_jp.strip()) == 0:
             return ""
         
-        # 1. PEQUEÑA PAUSA AUTOMÁTICA (Evita el baneo rápido)
+        # 1. PEQUEÑA PAUSA AUTOMÁTICA
         import time
         time.sleep(1.5) 
 
@@ -463,3 +463,4 @@ if __name__ == "__main__":
     app = ModernTranslatorApp(root)
 
     root.mainloop()
+

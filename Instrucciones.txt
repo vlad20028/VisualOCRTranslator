@@ -1,0 +1,33 @@
+# Instrucciones para uso basico
+
+# Edicion de codigo: Notepad++
+Tener instalado python y agregado al PATH.
+
+# Herramientas del Sistema:
+Tesseract OCR: Descarga e instala Tesseract.
+Windows: Descargar instalador. Importante: Durante la instalación, en la sección de idiomas, asegúrate de marcar "Japanese" y "Japanese (Vertical)". o
+
+# Descargar los archivos de idioma oficiales
+1. Desde el repositorio oficial de Tesseract (calidad alta):
+⦁	Japonés: jpn.traineddata
+https://github.com/tesseract-ocr/tessdata_best/blob/main/jpn.traineddata
+⦁	Español: spa.traineddata
+https://github.com/tesseract-ocr/tessdata_best/blob/main/spa.traineddata
+En cada caso, pulsa Download raw file.
+
+⦁	Copiar los archivos en la carpeta correcta
+Coloca ambos archivos en: C:\Users\home\AppData\Local\Programs\Tesseract-OCR\tessdata o tu ubicacion.
+
+⦁	Verificar idiomas instalados en cmd.
+tesseract --list-langs
+⦁	Debe mostrar algo como:
+eng
+jpn
+osd
+spa
+
+2. Poppler: Necesario para leer PDFs.
+Windows: Descarga el zip de Poppler releases, extraelo y añade la carpeta bin a tu variable de entorno PATH.
+
+3. Librerías Python: Ejecuta esto en tu terminal:
+pip install pytesseract pdf2image pillow deep-translator tk

@@ -1,9 +1,11 @@
 # VisualOCRTranslator
 
 VisualOCRTranslator es una aplicación de escritorio moderna para traducir texto directamente en documentos PDF mediante selección.
+<img width="1920" height="1080" alt="Captura de pantalla (2020)" src="https://github.com/user-attachments/assets/0d0cd3b0-af4a-4ff2-8c3e-ab678ed5d313" />
+<img width="1920" height="1080" alt="Captura de pantalla (2028)" src="https://github.com/user-attachments/assets/edf07d7e-e3dd-45de-8d67-da3e12742284" />
+<img width="1920" height="1080" alt="Captura de pantalla (2031)" src="https://github.com/user-attachments/assets/98a97484-b339-4a1a-b764-b5d06ee8d834" />
 
 # Descripción general
-
 Es un visor de PDF con OCR y traducción integrados que permite extraer, traducir y superponer texto directamente sobre documentos PDF. Es una herramienta diseñada específicamente para realizar traducciones simplemente seleccionando el área. Fusiona Tesseract OCR con qwen2.5:3b ([https://ollama.com/library/qwen2.5:3b](https://ollama.com/library/qwen2.5:3b)). Debe tener instalado Ollama para que funcione; también podría adaptarse para usar otros modelos más pesados.
 
 Lista de modelos: [https://ollama.com/search](https://ollama.com/search)

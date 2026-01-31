@@ -6,10 +6,10 @@ Es un visor de PDF CON OCR Y traduccion integrada que permite extraer, traducir 
 
 Lista de modelos: (https://ollama.com/search)
 
-#Requisitos
+# Requisitos
 1. tesseract-ocr (Instalado)
 tessdata_best (Idiomas) (https://github.com/tesseract-ocr/tessdata_best/tree/main)
 2. Poppler (instalado) para abrir los pdf
-3. Python Python 3.14.2 (añadido al patch)
+3. Python 3.14.2 (añadido al patch)
 
    ajusta la ubicacion en el codigo, ya viene una ruta por defecto en el archivo.py

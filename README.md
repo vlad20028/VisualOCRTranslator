@@ -18,3 +18,5 @@ Lista de modelos: [https://ollama.com/search](https://ollama.com/search)
 3. Python 3.14.2 (añadido al PATH)
 
 Ajusta la ubicación en el código; ya viene una ruta por defecto en el archivo .py.
+
+Considéralo el «santo grial» de los traductores de documentos.

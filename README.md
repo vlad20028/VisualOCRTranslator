@@ -19,4 +19,12 @@ Lista de modelos: [https://ollama.com/search](https://ollama.com/search)
 
 Ajusta la ubicación en el código; ya viene una ruta por defecto en el archivo .py.
 
+# Características clave
+1. Selección manual del área a traducir
+2. Tesseract OCR + qwen2.5:3b
+3. Bajo consumo de CPU
+4. No se requiere GPU dedicada (opcional)
+5. Posibilidad de adaptar modelos más grandes
+
+
 Considéralo el «santo grial» de los traductores de documentos.

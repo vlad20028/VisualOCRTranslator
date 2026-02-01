@@ -61,7 +61,7 @@ class TextOverlay(tk.Text):
 class ModernTranslatorApp:
     def __init__(self, root):
         self.root = root
-        self.root.title("VisualOCRTranslator")
+        self.root.title("VisualOCRTranslator (Alpha)")
         self.root.geometry("1400x900")
         
         self.pages = []
